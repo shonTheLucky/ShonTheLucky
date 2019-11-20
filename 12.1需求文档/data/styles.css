@@ -85,10 +85,25 @@
 }
 .table_cell {
 }
+.menu_item {
+}
 .flow_shape {
 }
 .connector {
 }
 .marker {
   color:#FFFFFF;
+}
+.vertical_line {
+}
+.horizontal_line {
+}
+.shape {
+}
+.tree_node {
+  text-align:left;
+}
+.droplist {
+  color:#000000;
+  text-align:left;
 }
