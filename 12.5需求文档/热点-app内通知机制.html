@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>热点-app内通知机制</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/热点-app内通知机制/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/热点-app内通知机制/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u76" class="ax_default box_3">
+        <img id="u76_img" class="img " src="images/热点-app内通知机制/u76.png"/>
+        <div id="u76_text" class="text ">
+          <p><span>`</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u77" class="ax_default image">
+        <img id="u77_img" class="img " src="images/热点-app内通知机制/u77.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u78" class="ax_default heading_2">
+        <img id="u78_img" class="img " src="images/热点-app内通知机制/u78.png"/>
+        <div id="u78_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">热点</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">-app</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">内通知的流程图</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u79" class="ax_default heading_2">
+        <img id="u79_img" class="img " src="images/热点-app内通知机制/u79.png"/>
+        <div id="u79_text" class="text ">
+          <p><span>需求LIST</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u80" class="ax_default image">
+        <img id="u80_img" class="img " src="images/热点-app内通知机制/u80.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u81" class="ax_default heading_2">
+        <img id="u81_img" class="img " src="images/热点-app内通知机制/u81.png"/>
+        <div id="u81_text" class="text ">
+          <p><span>需求点1：热点站内通知的触发机制 以及 持续推送时段控制</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u82" class="ax_default image">
+        <img id="u82_img" class="img " src="images/热点-app内通知机制/u82.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u83" class="ax_default primary_button">
+        <img id="u83_img" class="img " src="images/热点-app内通知机制/u83.png"/>
+        <div id="u83_text" class="text ">
+          <p><span>站内通知</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u84" class="ax_default box_1">
+        <img id="u84_img" class="img " src="images/热点-app内通知机制/u84.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u85" class="ax_default heading_3">
+        <img id="u85_img" class="img " src="images/热点-app内通知机制/u85.png"/>
+        <div id="u85_text" class="text ">
+          <p><span>#特斯拉产业链#站内通知</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u86" class="ax_default primary_button">
+        <img id="u86_img" class="img " src="images/热股后台/u71.png"/>
+        <div id="u86_text" class="text ">
+          <p><span>确定</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u87" class="ax_default button">
+        <img id="u87_img" class="img " src="images/热股后台/u72.png"/>
+        <div id="u87_text" class="text ">
+          <p><span>取消</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u88" class="ax_default label">
+        <img id="u88_img" class="img " src="images/热点-app内通知机制/u88.png"/>
+        <div id="u88_text" class="text ">
+          <p><span>通知时段：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u89" class="ax_default droplist">
+        <img id="u89_image_sketch" class="img " src="images/热点-app内通知机制/u89_image_sketch.png" alt="u89_image_sketch"/>
+        <select id="u89_input" class="form_sketch text_sketch">
+          <option value="2020">2020</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u90" class="ax_default droplist">
+        <img id="u90_image_sketch" class="img " src="images/热点-app内通知机制/u90_image_sketch.png" alt="u90_image_sketch"/>
+        <select id="u90_input" class="form_sketch text_sketch">
+          <option selected value="1">1</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u91" class="ax_default droplist">
+        <img id="u91_image_sketch" class="img " src="images/热点-app内通知机制/u91_image_sketch.png" alt="u91_image_sketch"/>
+        <select id="u91_input" class="form_sketch text_sketch">
+          <option value="22">22</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u92" class="ax_default label">
+        <img id="u92_img" class="img " src="images/热点-app内通知机制/u92.png"/>
+        <div id="u92_text" class="text ">
+          <p><span>年</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u93" class="ax_default label">
+        <img id="u93_img" class="img " src="images/热点-app内通知机制/u92.png"/>
+        <div id="u93_text" class="text ">
+          <p><span>月</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u94" class="ax_default label">
+        <img id="u94_img" class="img " src="images/热点-app内通知机制/u92.png"/>
+        <div id="u94_text" class="text ">
+          <p><span>日</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u95" class="ax_default droplist">
+        <img id="u95_image_sketch" class="img " src="images/热点-app内通知机制/u91_image_sketch.png" alt="u95_image_sketch"/>
+        <select id="u95_input" class="form_sketch text_sketch">
+          <option value="10">10</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u96" class="ax_default droplist">
+        <img id="u96_image_sketch" class="img " src="images/热点-app内通知机制/u91_image_sketch.png" alt="u96_image_sketch"/>
+        <select id="u96_input" class="form_sketch text_sketch">
+          <option value="30">30</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u97" class="ax_default label">
+        <img id="u97_img" class="img " src="images/热点-app内通知机制/u92.png"/>
+        <div id="u97_text" class="text ">
+          <p><span>点</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u98" class="ax_default label">
+        <img id="u98_img" class="img " src="images/热点-app内通知机制/u92.png"/>
+        <div id="u98_text" class="text ">
+          <p><span>分</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u99" class="ax_default droplist">
+        <img id="u99_image_sketch" class="img " src="images/热点-app内通知机制/u89_image_sketch.png" alt="u99_image_sketch"/>
+        <select id="u99_input" class="form_sketch text_sketch">
+          <option value="2020">2020</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u100" class="ax_default droplist">
+        <img id="u100_image_sketch" class="img " src="images/热点-app内通知机制/u90_image_sketch.png" alt="u100_image_sketch"/>
+        <select id="u100_input" class="form_sketch text_sketch">
+          <option selected value="1">1</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u101" class="ax_default droplist">
+        <img id="u101_image_sketch" class="img " src="images/热点-app内通知机制/u91_image_sketch.png" alt="u101_image_sketch"/>
+        <select id="u101_input" class="form_sketch text_sketch">
+          <option value="22">22</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u102" class="ax_default label">
+        <img id="u102_img" class="img " src="images/热点-app内通知机制/u92.png"/>
+        <div id="u102_text" class="text ">
+          <p><span>年</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u103" class="ax_default label">
+        <img id="u103_img" class="img " src="images/热点-app内通知机制/u92.png"/>
+        <div id="u103_text" class="text ">
+          <p><span>月</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u104" class="ax_default label">
+        <img id="u104_img" class="img " src="images/热点-app内通知机制/u92.png"/>
+        <div id="u104_text" class="text ">
+          <p><span>日</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u105" class="ax_default droplist">
+        <img id="u105_image_sketch" class="img " src="images/热点-app内通知机制/u91_image_sketch.png" alt="u105_image_sketch"/>
+        <select id="u105_input" class="form_sketch text_sketch">
+          <option value="22">22</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u106" class="ax_default droplist">
+        <img id="u106_image_sketch" class="img " src="images/热点-app内通知机制/u91_image_sketch.png" alt="u106_image_sketch"/>
+        <select id="u106_input" class="form_sketch text_sketch">
+          <option value="30">30</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u107" class="ax_default label">
+        <img id="u107_img" class="img " src="images/热点-app内通知机制/u92.png"/>
+        <div id="u107_text" class="text ">
+          <p><span>点</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u108" class="ax_default label">
+        <img id="u108_img" class="img " src="images/热点-app内通知机制/u92.png"/>
+        <div id="u108_text" class="text ">
+          <p><span>分</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u109" class="ax_default heading_3">
+        <img id="u109_img" class="img " src="images/热点-app内通知机制/u109.png"/>
+        <div id="u109_text" class="text ">
+          <p><span>至</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u110" class="ax_default connector">
+        <img id="u110_seg0" class="img " src="images/热点-app内通知机制/u110_seg0.png" alt="u110_seg0"/>
+        <img id="u110_seg1" class="img " src="images/热点-app内通知机制/u110_seg1.png" alt="u110_seg1"/>
+        <img id="u110_seg2" class="img " src="images/热点-app内通知机制/u110_seg2.png" alt="u110_seg2"/>
+        <img id="u110_seg3" class="img " src="images/热点-app内通知机制/u110_seg3.png" alt="u110_seg3"/>
+        <div id="u110_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u111" class="ax_default paragraph">
+        <img id="u111_img" class="img " src="images/热点-app内通知机制/u111.png"/>
+        <div id="u111_text" class="text ">
+          <p style="font-size:16px;"><span>&#149; 热点站内通知触发入口：</span></p><p style="font-size:14px;"><span>1、话题管理后台，每一个话题数据行，增加一个【站内通知】的配置入口</span></p><p style="font-size:14px;"><span>2、每一个话题数据，增加一列数据“站内通知”，表示该话题是否发送过“站内通知”</span></p><p style="font-size:14px;"><span>-若该话题没有发送过站内通知，则这一列数据显示为“未发送”</span></p><p style="font-size:14px;"><span>-若该话题曾经发送过站内通知，则这一列数据显示为“已发送”</span></p><p style="font-size:14px;"><span><br></span></p><p style="font-size:14px;"><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u112" class="ax_default label">
+        <img id="u112_img" class="img " src="images/热点-app内通知机制/u112.png"/>
+        <div id="u112_text" class="text ">
+          <p><span>站内通知</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u113" class="ax_default label">
+        <img id="u113_img" class="img " src="images/热门页客户端改动/u24.png"/>
+        <div id="u113_text" class="text ">
+          <p><span>未发送</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u114" class="ax_default box_1">
+        <img id="u114_img" class="img " src="images/热点-app内通知机制/u114.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u115" class="ax_default paragraph">
+        <img id="u115_img" class="img " src="images/热点-app内通知机制/u115.png"/>
+        <div id="u115_text" class="text ">
+          <p style="font-size:16px;"><span>&#149; 热点站内通知编辑项：</span></p><p style="font-size:14px;"><span>1、后台仅支持编辑“通知持续时段”，其它数据都由服务自动生成</span></p><p style="font-size:14px;"><span>2、“通知持续时段”的定义——</span></p><p style="font-size:14px;"><span>举例说明，若#特斯拉#这个话题，运营后台配置的是今天10点——22点的推送时段，则从客户端角度，改用户今天10点——22点时段内首次打开雪球app，都需要收到一次且只收到一次该话题的站内通知。</span></p><p style="font-size:14px;"><span><br></span></p><p style="font-size:14px;"><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u116" class="ax_default heading_2">
+        <img id="u116_img" class="img " src="images/热点-app内通知机制/u116.png"/>
+        <div id="u116_text" class="text ">
+          <p><span>需求点2：热点，端上推送逻辑（优先级）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u117" class="ax_default paragraph">
+        <img id="u117_img" class="img " src="images/热点-app内通知机制/u117.png"/>
+        <div id="u117_text" class="text ">
+          <p><span>&#149; 针对某个用户，每次打开客户端时，可能面临以下几种“热点推送”的情况：</span></p><p><span>1.没有预置推送</span></p><p><span>2.有一条预置推送</span></p><p><span>3.有多条预置推送</span></p><p><span><br></span></p><p><span>&#149; 针对以上几种情况，客户端需要输出给用户的“站内热点推送”为以下几种：</span></p><p><span>1.不展示热点站内推送</span></p><p><span>2.当用户打开app，延时10秒，做这条热点的站内推送</span></p><p><span>3.当用户打开app，延时10秒，客户端取多条热点中，创建时间最晚的那条进行推送</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u118" class="ax_default heading_2">
+        <img id="u118_img" class="img " src="images/热点-app内通知机制/u118.png"/>
+        <div id="u118_text" class="text ">
+          <p><span>需求点3：热点推送，站内落地窗口样式</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u119" class="ax_default image">
+        <img id="u119_img" class="img " src="images/热点-app内通知机制/u119.png"/>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u120" class="ax_default" data-left="99" data-top="1905" data-width="285" data-height="123">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u121" class="ax_default box_1">
+          <img id="u121_img" class="img " src="images/热点-app内通知机制/u121.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u122" class="ax_default button">
+          <img id="u122_img" class="img " src="images/热点-app内通知机制/u122.png"/>
+          <div id="u122_text" class="text ">
+            <p><span>雪球热点</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u123" class="ax_default label">
+          <img id="u123_img" class="img " src="images/热点-app内通知机制/u123.png"/>
+          <div id="u123_text" class="text ">
+            <p><span style="font-family:'ArialMT', 'Arial';">2020</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">年</span><span style="font-family:'ArialMT', 'Arial';">1</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">月</span><span style="font-family:'ArialMT', 'Arial';">21</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">日</span><span style="font-family:'ArialMT', 'Arial';"> 10</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">点</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u124" class="ax_default heading_3">
+          <img id="u124_img" class="img " src="images/热点-app内通知机制/u124.png"/>
+          <div id="u124_text" class="text ">
+            <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">#</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">九毛九赴港上市</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">#</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u125" class="ax_default label">
+          <img id="u125_img" class="img " src="images/热点-app内通知机制/u125.png"/>
+          <div id="u125_text" class="text ">
+            <p><span>最热讨论：“太二”翻台率接近海底捞！“九毛九”能</span></p><p><span>复制海底捞长牛走势？&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 参与讨论&gt;&gt;</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u126" class="ax_default image">
+        <img id="u126_img" class="img " src="images/热点-app内通知机制/u119.png"/>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u127" class="ax_default" data-left="428" data-top="1905" data-width="285" data-height="153">
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u128" class="ax_default box_1">
+          <img id="u128_img" class="img " src="images/热点-app内通知机制/u128.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u129" class="ax_default button">
+          <img id="u129_img" class="img " src="images/热点-app内通知机制/u129.png"/>
+          <div id="u129_text" class="text ">
+            <p><span>雪球热点</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u130" class="ax_default label">
+          <img id="u130_img" class="img " src="images/热点-app内通知机制/u123.png"/>
+          <div id="u130_text" class="text ">
+            <p><span style="font-family:'ArialMT', 'Arial';">2020</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">年</span><span style="font-family:'ArialMT', 'Arial';">1</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">月</span><span style="font-family:'ArialMT', 'Arial';">21</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">日</span><span style="font-family:'ArialMT', 'Arial';"> 10</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">点</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u131" class="ax_default heading_3">
+          <img id="u131_img" class="img " src="images/热点-app内通知机制/u131.png"/>
+          <div id="u131_text" class="text ">
+            <p><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">#</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">九毛九赴港上市，九毛九赴港上市，</span></p><p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">九毛九赴港上市</span><span style="font-family:'Arial-BoldMT', 'Arial Bold', 'Arial';font-weight:700;">#</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u132" class="ax_default label">
+          <img id="u132_img" class="img " src="images/热点-app内通知机制/u132.png"/>
+          <div id="u132_text" class="text ">
+            <p><span>最热讨论：“太二”翻台率接近海底捞！“九毛九”能</span></p><p><span>复制海底捞长牛走势？ 太二翻台率…&nbsp; 参与讨论&gt;&gt;</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

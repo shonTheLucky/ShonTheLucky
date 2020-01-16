@@ -1,0 +1,327 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>热门页客户端改动</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/热门页客户端改动/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/热门页客户端改动/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u0" class="ax_default heading_2">
+        <img id="u0_img" class="img " src="images/热门页客户端改动/u0.png"/>
+        <div id="u0_text" class="text ">
+          <p><span>需求背景</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1" class="ax_default paragraph">
+        <img id="u1_img" class="img " src="images/热门页客户端改动/u1.png"/>
+        <div id="u1_text" class="text ">
+          <p style="font-size:16px;"><span>&#149; 热股效果：</span></p><p style="font-size:14px;"><span>目前雪球热股模块，在整个热门页的用户参与率稳定在第二位（补充数据），且从内容运营的反馈来看，这个模块整体对于他们运营热点，都存在较强的参考意义。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2" class="ax_default paragraph">
+        <img id="u2_img" class="img " src="images/热门页客户端改动/u1.png"/>
+        <div id="u2_text" class="text ">
+          <p style="font-size:16px;"><span>&#149; 优化前因</span></p><p style="font-size:14px;"><span>由于该模块属于热门页，且本身与热点、个股页强关联，与2020年okr强关联。</span></p><p style="font-size:14px;"><span>且在产品设计及运营过程中，相关团队都发现该模块存在低成本、可优化的方案。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u3" class="ax_default paragraph">
+        <img id="u3_img" class="img " src="images/热门页客户端改动/u3.png"/>
+        <div id="u3_text" class="text ">
+          <p style="font-size:16px;"><span>&#149; 优化方向</span></p><p style="font-size:14px;"><span>故而本期准备做的优化是——热门页雪球热股模块，增加“上榜理由”的展示。且第一期为了验证效果，先采用运营人工维护的方式进行上榜理由的编辑。</span></p><p style="font-size:14px;"><span>（算法自动化对自然语言支持度不够，UGC方案的监管风险无法回避，从成本和效果综合考虑，先用运营维护的方式）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u4" class="ax_default heading_2">
+        <img id="u4_img" class="img " src="images/热门页客户端改动/u4.png"/>
+        <div id="u4_text" class="text ">
+          <p><span>客户端需求</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5" class="ax_default paragraph">
+        <img id="u5_img" class="img " src="images/热门页客户端改动/u5.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u6" class="ax_default paragraph">
+        <img id="u6_img" class="img " src="images/热门页客户端改动/u1.png"/>
+        <div id="u6_text" class="text ">
+          <p style="font-size:16px;"><span>&#149; 方案简介</span></p><p style="font-size:14px;"><span>1、对客户端-热门页-雪球热股这个展示区域视觉改造，支持每个模块增加“上榜理由”的展示</span></p><p style="font-size:14px;"><span>2、开发“热股管理”后台，支持展示当前热股TOP数据，支持针对热股编辑“上榜理由”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u7" class="ax_default paragraph">
+        <img id="u7_img" class="img " src="images/热门页客户端改动/u7.png"/>
+        <div id="u7_text" class="text ">
+          <p><span>&#149; 客户端原型图</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u8" class="ax_default paragraph">
+        <img id="u8_img" class="img " src="images/热门页客户端改动/u8.png"/>
+        <div id="u8_text" class="text ">
+          <p style="font-size:16px;"><span>&#149; 热股改动：</span></p><p style="font-size:14px;"><span>-每个热股展示的内容包括：</span></p><p style="font-size:14px;"><span>1.股票名（最多4个字符，超过4个字的部分用…代替）；</span></p><p style="font-size:14px;"><span>2.涨跌幅度（整数位+小数位不超过4个数字，即：一位数涨幅展示为9.99%，两位数涨幅展示为99.99%，三位数涨幅展示为999.9%，四位数及以上涨幅展示为9999%）；</span></p><p style="font-size:14px;"><span>3.上榜理由（两行总计20个字符宽度，超长的…截断）</span></p><p style="font-size:14px;"><span><br></span></p><p style="font-size:14px;"><span>-热股排序改为：</span></p><p style="font-size:14px;"><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u9" class="ax_default box_1">
+        <img id="u9_img" class="img " src="images/热门页客户端改动/u9.png"/>
+        <div id="u9_text" class="text ">
+          <p><span>2</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u10" class="ax_default box_1">
+        <img id="u10_img" class="img " src="images/热门页客户端改动/u9.png"/>
+        <div id="u10_text" class="text ">
+          <p><span>3</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u11" class="ax_default box_1">
+        <img id="u11_img" class="img " src="images/热门页客户端改动/u9.png"/>
+        <div id="u11_text" class="text ">
+          <p><span>4</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u12" class="ax_default box_1">
+        <img id="u12_img" class="img " src="images/热门页客户端改动/u9.png"/>
+        <div id="u12_text" class="text ">
+          <p><span>5</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u13" class="ax_default box_1">
+        <img id="u13_img" class="img " src="images/热门页客户端改动/u9.png"/>
+        <div id="u13_text" class="text ">
+          <p><span>6</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u14" class="ax_default box_1">
+        <img id="u14_img" class="img " src="images/热门页客户端改动/u9.png"/>
+        <div id="u14_text" class="text ">
+          <p><span>7</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u15" class="ax_default box_1">
+        <img id="u15_img" class="img " src="images/热门页客户端改动/u15.png"/>
+        <div id="u15_text" class="text ">
+          <p><span>1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u16" class="ax_default" data-left="50" data-top="556" data-width="351" data-height="1126">
+
+        <!-- Unnamed (Image) -->
+        <div id="u17" class="ax_default image">
+          <img id="u17_img" class="img " src="images/热门页客户端改动/u17.png"/>
+        </div>
+
+        <!-- Unnamed (Image) -->
+        <div id="u18" class="ax_default image">
+          <img id="u18_img" class="img " src="images/热门页客户端改动/u18.png"/>
+        </div>
+
+        <!-- Unnamed (Image) -->
+        <div id="u19" class="ax_default image">
+          <img id="u19_img" class="img " src="images/热门页客户端改动/u19.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u20" class="ax_default box_1">
+          <img id="u20_img" class="img " src="images/热门页客户端改动/u20.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u21" class="ax_default box_1">
+          <img id="u21_img" class="img " src="images/热门页客户端改动/u20.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u22" class="ax_default box_1">
+          <img id="u22_img" class="img " src="images/热门页客户端改动/u20.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u23" class="ax_default box_1">
+          <img id="u23_img" class="img " src="images/热门页客户端改动/u20.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u24" class="ax_default label">
+          <img id="u24_img" class="img " src="images/热门页客户端改动/u24.png"/>
+          <div id="u24_text" class="text ">
+            <p><span>比亚迪</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u25" class="ax_default label">
+          <img id="u25_img" class="img " src="images/热门页客户端改动/u25.png"/>
+          <div id="u25_text" class="text ">
+            <p><span>+10.00%</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u26" class="ax_default label">
+          <img id="u26_img" class="img " src="images/热门页客户端改动/u26.png"/>
+          <div id="u26_text" class="text ">
+            <p><span>工信部称今年新能源汽</span></p><p><span>车补贴不会大幅退坡…</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u27" class="ax_default label">
+          <img id="u27_img" class="img " src="images/热门页客户端改动/u24.png"/>
+          <div id="u27_text" class="text ">
+            <p><span>五粮液</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u28" class="ax_default label">
+          <img id="u28_img" class="img " src="images/热门页客户端改动/u28.png"/>
+          <div id="u28_text" class="text ">
+            <p><span>+4.38%</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u29" class="ax_default label">
+          <img id="u29_img" class="img " src="images/热门页客户端改动/u26.png"/>
+          <div id="u29_text" class="text ">
+            <p><span>工信部称今年新能源汽</span></p><p><span>车补贴不会大幅退坡…</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u30" class="ax_default label">
+          <img id="u30_img" class="img " src="images/热门页客户端改动/u30.png"/>
+          <div id="u30_text" class="text ">
+            <p><span>中国平安</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u31" class="ax_default label">
+          <img id="u31_img" class="img " src="images/热门页客户端改动/u31.png"/>
+          <div id="u31_text" class="text ">
+            <p><span>+1.71%</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u32" class="ax_default label">
+          <img id="u32_img" class="img " src="images/热门页客户端改动/u26.png"/>
+          <div id="u32_text" class="text ">
+            <p><span>工信部称今年新能源汽</span></p><p><span>车补贴不会大幅退坡…</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u33" class="ax_default label">
+          <img id="u33_img" class="img " src="images/热门页客户端改动/u30.png"/>
+          <div id="u33_text" class="text ">
+            <p><span>中科曙光</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u34" class="ax_default label">
+          <img id="u34_img" class="img " src="images/热门页客户端改动/u28.png"/>
+          <div id="u34_text" class="text ">
+            <p><span>+9.34%</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u35" class="ax_default label">
+          <img id="u35_img" class="img " src="images/热门页客户端改动/u26.png"/>
+          <div id="u35_text" class="text ">
+            <p><span>工信部称今年新能源汽</span></p><p><span>车补贴不会大幅退坡…</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u36" class="ax_default box_2">
+          <img id="u36_img" class="img " src="images/热门页客户端改动/u36.png"/>
+          <div id="u36_text" class="text ">
+            <p><span>雪球热股</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Image) -->
+        <div id="u37" class="ax_default image">
+          <img id="u37_img" class="img " src="images/热门页客户端改动/u37.png"/>
+        </div>
+
+        <!-- Unnamed (Rectangle) -->
+        <div id="u38" class="ax_default box_2">
+          <img id="u38_img" class="img " src="images/热门页客户端改动/u36.png"/>
+          <div id="u38_text" class="text ">
+            <p><span>雪球热点</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Image) -->
+        <div id="u39" class="ax_default image">
+          <img id="u39_img" class="img " src="images/热门页客户端改动/u39.png"/>
+        </div>
+
+        <!-- Unnamed (Image) -->
+        <div id="u40" class="ax_default image">
+          <img id="u40_img" class="img " src="images/热门页客户端改动/u40.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u41" class="ax_default paragraph">
+        <img id="u41_img" class="img " src="images/热门页客户端改动/u41.png"/>
+        <div id="u41_text" class="text ">
+          <p style="font-size:16px;"><span>&#149; 热门页改动list：</span></p><p style="font-size:14px;"><span>1.模块改名：热门话题→雪球热点，热门股票→雪球热股，热门帖子→雪球热帖，热门音频→雪球之声</span></p><p style="font-size:14px;"><span>2.模块调序：从上到下的顺序为——雪球7*24，雪球热点，雪球热股，雪球之声，雪球热帖</span></p><p style="font-size:14px;"><span>3.热股整体样式改动，增加上榜理由展示，下方详述</span></p><p style="font-size:14px;"><span><br></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
